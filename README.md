@@ -39,7 +39,6 @@ This Chrome extension automatically converts gross (Бруто) salary listings 
 - `content.js` – Main logic for detecting and converting salaries
 - `popup.html` – Simple popup UI
 - `popup.js` – Toggle logic using Chrome storage
-- `background.js` – Sets default settings on first install
 - `icon128.png` – Extension icon
 
 ---
