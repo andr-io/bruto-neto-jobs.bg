@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <style>
     body {
@@ -15,9 +14,34 @@
       justify-content: space-between;
       margin-bottom: 8px;
     }
+
+    input[type="number"] {
+      width: 100%;
+      margin-top: 4px;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 6px;
+      margin-top: 8px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
   </style>
 </head>
-
 <body>
   <label>
     Enable conversion
@@ -28,7 +52,13 @@
     <input type="checkbox" id="showDecimals" />
   </label>
 
+  <label style="flex-direction: column; align-items: flex-start;">
+    Enter bruto amount
+    <input type="number" id="brutoInput" placeholder="e.g. 2000" />
+  </label>
+  <button id="calculateBtn">Calculate</button>
+  <div id="result"></div>
+
   <script src="popup.js"></script>
 </body>
-
 </html>
