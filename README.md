@@ -1,54 +1,45 @@
-# 🦊 Jobs.bg Bruto → Neto Salary Converter
+# 💼 Jobs.bg Bruto → Neto Converter
 
-This Chrome extension automatically converts gross (Бруто) salary listings on [jobs.bg](https://www.jobs.bg) into net (Нето) salary estimates — right on the page. It uses accurate 2025 Bulgarian tax rules and preserves the original formatting.
+Chrome extension that auto-converts gross (Бруто) salaries on [jobs.bg](https://www.jobs.bg) into net (Нето) estimates — directly on the site.
 
 ---
 
 ## ✅ Features
 
-- Detects salaries like `от 3000 до 5000 BGN (Бруто)`
-- Appends net equivalents: `от 3000 (2327) до 5000 (3880) BGN (Бруто)`
-- Skips listings already marked as `(Нето)`
-- Popup with two toggles:
-  - ✅ Enable/disable conversion
-  - ✅ Show/hide decimal values (e.g. `1700.05` vs `1700`)
-- Accurate tax calculation based on:
-  - 13.78% social security contributions (up to 4130 BGN cap)
+- Detects listings like `от 3000 до 5000 BGN (Бруто)`
+- Adds net equivalents: `от 3000 (2327) до 5000 (3880)`
+- Skips `(Нето)`-marked entries
+- Popup toggles:
+  - Enable/disable conversion
+  - Show/hide decimals
+- Tax logic:
+  - 13.78% social security (up to 4130 BGN)
   - 10% income tax
 
 ---
 
-## 🧩 How to Install (via Load Unpacked)
+## 🧩 Install (Load Unpacked)
 
-1. **Download or clone** this repository to your computer.
-
-2. Open **Google Chrome** and go to  
-   `chrome://extensions/`
-
-3. In the top-right corner, **enable Developer mode**.
-
-4. Click **“Load unpacked”** and select the folder where this extension is saved.
-
-5. You should now see the 🦊 icon in your toolbar. Click it to open the popup and configure options.
+1. Clone or download this repo  
+2. Go to `chrome://extensions/` in Chrome  
+3. Enable **Developer mode**  
+4. Click **Load unpacked** → select the folder  
+5. J icon appears — click to configure
 
 ---
 
-## 🛠️ Files Included
+## 🛠️ Files
 
-- `manifest.json` – Extension configuration
-- `content.js` – Main logic for detecting and converting salaries
-- `popup.html` – Simple popup UI
-- `popup.js` – Toggle logic using Chrome storage
-- `background.js` – Sets default settings on first install
-- `icon128.png` – Extension icon
+- `manifest.json` – Config  
+- `content.js` – Salary logic  
+- `popup.html/.js` – UI & toggles  
+- `background.js` – Default settings  
+- `icon128.png` – Icon
 
 ---
 
 ## 📌 Notes
 
-- This extension only runs on `https://www.jobs.bg/*`
-- It does not modify or send any data — all processing is done locally
-- Net salary estimates are based on 2025 Bulgarian tax rules and may vary slightly depending on individual circumstances
-
----
-
+- Runs only on `https://www.jobs.bg/*`  
+- No data sent — all processing is local  
+- Estimates based on 2025 Bulgarian tax rules
