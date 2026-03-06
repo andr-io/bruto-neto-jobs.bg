@@ -6,15 +6,14 @@ Chrome extension that auto-converts gross (Бруто) salaries on [jobs.bg](htt
 
 ## ✅ Features
 
-- Detects listings like `от 3000 до 5000 BGN (Бруто)`
+- Detects listings like `от 3000 до 5000 EUR (Бруто)`
 - Adds net equivalents: `от 3000 (2327) до 5000 (3880)`
 - Skips `(Нето)`-marked entries
 - Popup options:
   - Enable/disable conversion
-  - Show/hide decimals
   - **Bruto → Neto calculator**: input any gross salary and get the net estimate instantly
 - Tax logic:
-  - 13.78% social security (up to 4130 BGN)
+  - 13.78% social security (up to 2111 EUR)
   - 10% income tax
 
 ---
